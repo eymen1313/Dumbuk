@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Eyyüp</title>
+  <style>
+    #yazi {
+        position:absolute;   
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+    }
+   #dugme {
+     position:absolute;
+     width: 250px;
+     height: 100px;
+     font-size: 50px;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     
+   }
+   #foto {
+    position:absolute;
+    width: 1000px;
+    z-index: -1;
+    height: 1000px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+  </style>
+</head>
+<body>
+  <h1 id="yazi"> Dümbüklemek için Bas </h1>
+  <button onclick="basti()" id="dugme"> Dümbükle </button>
+  <img id="foto" src="https://github.com/eymen1313/Dumbuk/blob/main/dedem.jpg?raw=true"> 
+  <script>
+    let basmasayisi = 0;
+    function basti() {
+        basmasayisi++;
+        document.getElementById("yazi").innerText = basmasayisi.toString() + " Kez Dümbükledin";
+    }
+  </script>
+</body>
+</html>
